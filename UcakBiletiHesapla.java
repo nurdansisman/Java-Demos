@@ -53,10 +53,10 @@ public class UcakBiletiHesapla {
 
         } else if (yas>24 && yas<65) {
             if (yolculukTipi.equalsIgnoreCase("gidiş-dönüş")){
-                indirimliFiyat=0.2;
+                indirimliFiyat= fiyat * 0.2;
                 System.out.println("Bilet fiyatı:" + indirimliFiyat);
             }else {
-
+                System.out.println("bilet fiyatı:" + fiyat);
             }
 
 
