@@ -26,37 +26,38 @@ public class UcakBiletiHesapla {
         if (yas<=12){
             if (yolculukTipi.equalsIgnoreCase("gidiş-dönüş")){
                 indirimliFiyat=fiyat * (0.50 + 0.20);
-                //indirimliFiyat=0.2;
                 System.out.println("Bilet fiyatı:" + indirimliFiyat);
-            }else
-            indirimliFiyat=fiyat * 0.5;
-            System.out.println("Bilet fiyatı:" + indirimliFiyat);
+            }else {
+                indirimliFiyat = fiyat * 0.5;
+                System.out.println("Bilet fiyatı:" + indirimliFiyat);
+            }
 
         }
         else if (yas<=24 && yas>12){
             if (yolculukTipi.equalsIgnoreCase("gidiş-dönüş")){
                 indirimliFiyat=fiyat * (0.10 + 0.20);
-                //indirimliFiyat=0.2;
                 System.out.println("Bilet fiyatı:" + indirimliFiyat);
-            }else
-            indirimliFiyat=fiyat * 0.1;
-            System.out.println("Bilet fiyatı:" + indirimliFiyat);
+            } else {
+                indirimliFiyat = fiyat * 0.1;
+                System.out.println("Bilet fiyatı:" + indirimliFiyat);
+            }
 
         } else if (yas>=65) {
             if (yolculukTipi.equalsIgnoreCase("gidiş-dönüş")){
                 indirimliFiyat=fiyat * (0.30 + 0.20);
-                //indirimliFiyat=0.2;
                 System.out.println("Bilet fiyatı:" + indirimliFiyat);
-            }else
-            indirimliFiyat=fiyat * 0.3;
-            System.out.println("Bilet fiyatı:" + indirimliFiyat);
+            } else {
+                indirimliFiyat = fiyat * 0.3;
+                System.out.println("Bilet fiyatı:" + indirimliFiyat);
+            }
 
         } else if (yas>24 && yas<65) {
             if (yolculukTipi.equalsIgnoreCase("gidiş-dönüş")){
                 indirimliFiyat=0.2;
                 System.out.println("Bilet fiyatı:" + indirimliFiyat);
-            }else
-            System.out.println("Bilet fiyatı:" + fiyat);
+            }else {
+
+            }
 
 
         }
